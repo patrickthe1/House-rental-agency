@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental Kigali</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo"><i class='bx bxs-building-house'></i>Housing.Inc</a>
+            <input type="checkbox" id="menu">
+            <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="pages/add-listing.html">Add listing</a></li>
+                <li><a href="#properties">Properties</a></li>
+            </ul>
+
+            <a href="pages/login.html" class="btn">Log In</a>
+        </div>
+    </header>
+
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1>Find Your Kigali Home with<br>Housing.Inc</h1>
+            <a href="pages/signup.html" class="btn">Signup</a>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="images/About us.jpg" alt="about-image">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We'll help you find the perfect property <br> that fits your needs and lifestyle</h2>
+            <p>We are Kigali's premier online home rental platform <br> connecting you with a diverse range of beautiful and comfortable homes across the city. <br> Whether you're a young professional seeking a modern apartment in the  city, a family looking for a spacious house with a backyard, <br> or a visitor on a short-term stay, we have something for everyone.</p>
+            <p>Our user-friendly website allows you to easily find properties based on your specific needs . With detailed listings, clear photos, <br> you can explore your options from the comfort of your couch. <br> We are committed to transparency, so you can be confident that you're getting all the information you need to make an informed decision..</p>
+            <p>Let us help you discover the perfect place to live, work, and relax here in Kigali.</p>
+            <a href="" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="sales container" id="sales">
+        <!-- Box 1 -->
+        <div class="box">
+            <a href="#properties"><i class='bx bx-user'></i></a>
+            <h3>Make your Dream come true</i></h3>
+            <p> Here at Housing.Inc, we believe your dream Kigali home shouldn't just be a dream.  Browse our listings, find your perfect match, and start living the Kigali life you've always envisioned.</p>
+        </div>
+         <!-- Box 2 -->
+        <div class="box">
+            <a href="pages/signup.html"><i class='bx bx-desktop'></i></a>
+            <h3>Start your Membership</h3>
+            <p>Are you a proud Kigali homeowner looking to rent out your property?  At Housing.Inc, we offer a seamless platform to connect with a wide audience of potential tenants seeking a comfortable and stylish home in Kigali.  Our user-friendly system makes listing your property quick and easy. Simply create an account, add your listing details, and manage inquiries all in one place.</p>
+        </div>
+         <!-- Box 3 -->
+        <div class="box">
+        <a href="pages/Faqs.html"><i class='bx bx-question-mark'></i></a>
+            <h3>FAQS</h3>
+            <p>We understand that navigating the rental process can bring up questions.  Our FAQ section is here to provide you with clear and concise answers to some of the most common inquiries renters and property owners have.  If you can't find the answer you're looking for, don't hesitate to contact our friendly customer support team for further assistance.</p>
+        </div>
+    </section>
+
+    <section class="properties container" id="properties">
+        <div class="heading">
+            <span>Recent</span>
+            <h2>Our featured properties</h2>
+            <p> Dive into our Featured Properties and discover your perfect home</p>
+        </div>
+        <div class="properties-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <a href="#property-details"><img src="images/Properties/p1.png" alt="" data-property-id="1"></a>
+                <h3>RWF 3M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The palace</h3>
+                        <p>Remera,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>8</span></i>
+                        <i class='bx bx-bath'><span>4</span></i>
+                        <i class='bx bxs-car-garage'></i><span>2</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 2 -->
+            <div class="box">
+                <a href="#property-details"><img src="images/Properties/p2.png" alt="" data-property-id="2"></a>
+                <h3>RWF 3M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>House with Garden</h3>
+                        <p>Kibagabaga,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>5</span></i>
+                        <i class='bx bx-bath'><span>3</span></i>
+                        <i class='bx bxs-car-garage'></i><span>2</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 3 -->
+            <div class="box">
+               <a href="#property-details"> <img src="images/Properties/p3.png" alt="" data-property-id="3"></a>
+                <h3>RWF 600k/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Remera House</h3>
+                        <p>Remera,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>4</span></i>
+                        <i class='bx bx-bath'><span>3</span></i>
+                        <i class='bx bxs-car-garage'></i><span>N/A</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 4 -->
+            <div class="box">
+               <a href="#property-details"> <img src="images/Properties/p4.png" alt="" data-property-id="4"></a>
+                <h3>RWF 1M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Modern house </h3>
+                        <p>Kinyinya,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>4</span></i>
+                        <i class='bx bx-bath'><span>3</span></i>
+                        <i class='bx bxs-car-garage'></i><span>2</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 5 -->
+            <div class="box">
+              <a href="#property-details">  <img src="images/Properties/p5.png" alt="" data-property-id="5"></a>
+                <h3>RWF 2.5M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Twin-House </h3>
+                        <p>Kimironko,Zindiro</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>8</span></i>
+                        <i class='bx bx-bath'><span>8</span></i>
+                        <i class='bx bxs-car-garage'></i><span>3</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 6 -->
+            <div class="box">
+                <a href="#property-details"><img src="images/Properties/p6.png" alt="" data-property-id="6"></a>
+                <h3>RWF 2.5M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Luxury Villa</h3>
+                        <p>Kinyinya,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>4</span></i>
+                        <i class='bx bx-bath'><span>6</span></i>
+                        <i class='bx bxs-car-garage'></i><span>2</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 7-->
+            <div class="box">
+              <a href="#property-details">  <img src="images/Properties/P7.png" alt="" data-property-id="7"></a>
+                <h3>RWF 4.3M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Refined villa nyarutarama</h3>
+                        <p>nyarutarama,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>7</span></i>
+                        <i class='bx bx-bath'><span>4</span></i>
+                        <i class='bx bxs-car-garage'><span>3</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 8-->
+            <div class="box">
+                <a href="#property-details"><img src="images/Properties/p8.png" alt="" data-property-id="8"></a>
+                <h3>RWF 3.5M/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Rusororo mansion</h3>
+                        <p>rusororo,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>4</span></i>
+                        <i class='bx bx-bath'><span>3</span></i>
+                        <i class='bx bx-bath'><span>2</span></i>
+                    </div>
+                </div>
+            </div>         
+            <!-- Box 9 -->
+            <div class="box">
+                <a href="#property-details"><img src="images/Properties/p9.png" alt="" data-property-id="9"></a>
+                <h3>RWF 900K/mo</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>Family Home</h3>
+                        <p>Kibagabaga,Kigali</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>5</span></i>
+                        <i class='bx bx-bath'><span>2</span></i>
+                        <i class='bx bxs-car-garage'><span>1</span></i>
+                    </div>
+                </div>
+            </div>         
+    </section>
+
+    <section class="property-details container" id="property-details">
+        <div class="details-box">
+            <h1>Property Details</h1>
+            <img  src="images/property-details.jpeg"  id="property-image" alt="Property Image">
+            <h3 id="property-title"></h3>
+          <ul id="property-description"></ul>
+          <p id="contacts" style="font-size: 24px;">Click on a property above to view its details.</p>
+        </div>
+        </section>
+
+    <section class="newsletter container" id="newsletter">
+        <h2>Subscribe to Our newsletter to receive updates and offers.</h2>
+        <form action="">
+            <input type="email" id="email-box" placeholder="Enter your email" required>
+            <input type="submit" value="send" class="btn">
+        </form>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <h2>Housing.Inc</h2>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Find</a>
+                <a href="#">rates</a>
+                <a href="#">Buildings</a>
+                <a href="#">Sell</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#">Remera</a>
+                <a href="#">Kicukiro</a>
+                <a href="#">Gikondo</a>
+                <a href="#">Kibagabaga</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="tel:0793381475"><i class='bx bxs-phone-call'>&nbsp;</i>+250793381475</a>
+                <a href="#">mugishapatrick730@gmail.com</a>
+                <div class="social">
+                    <a href="https://web.facebook.com/profile.php?id=100074965262950"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/mugisha_th.eone8479/"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- copyright -->
+    <div class="copyright">
+        <p>&copy;PatrickFoundations All Rights Reserved</p>
+    </div>
+
+    <script src="static/property-details.js"></script>
+</body>
+</html>

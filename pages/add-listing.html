@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add listing </title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="../index.html" class="logo"><i class='bx bxs-building-house'></i>Housing.Inc</a>
+            <input type="checkbox" id="menu">
+            <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+            <a href="../pages/login.html" class="btn">Log In</a>
+        </div>
+    </header>
+
+    <section class="addListing">
+        <h2>Add Your Property Listing</h2>
+
+        <form id="add-listing-form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+    
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+    
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+    
+          <label for="bedrooms">Bedrooms:</label>
+          <input type="number" id="bedrooms" name="bedrooms" min="1" required>
+    
+          <label for="bathrooms">Bathrooms:</label>
+          <input type="number" id="bathrooms" name="bathrooms" min="1" required>
+    
+          <label for="rent">Rent (per month):</label>
+          <input type="number" id="rent" name="rent" min="0" required>
+    
+          <label for="image">Image:</label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+    
+          <button type="submit" onclick="openPopup()">Submit Listing</button>
+          <div class="popup" id="popup">
+            <img src="../images/tick.jpeg">
+            <h2>Thank You</h2>
+            <p>Your details have been successfully submitted.</p>
+            <p>You will be notified once the review is done.</p>            
+            <button type="button" onclick="closePopup()">Ok</button>
+          </div>
+          <div class="popup2" id="popup2">
+            <p>Please make sure you have filled in all the information!</p>            
+            <button type="button" onclick="closePopup()">Ok</button>
+          </div>
+        </form>
+    
+    </section>
+    <section class="footer">
+        <div class="footer-container container">
+            <h2>Housing.Inc</h2>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Find</a>
+                <a href="#">rates</a>
+                <a href="#">Buildings</a>
+                <a href="#">Sell</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#">Remera</a>
+                <a href="#">Kicukiro</a>
+                <a href="#">Gikondo</a>
+                <a href="#">Gahanga</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">+250793381475</a>
+                <a href="#">mugishapatrick730@gmail.com</a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- copyright -->
+    <div class="copyright">
+        <p>&copy;PatrickFoundations All Rights Reserved</p>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        let popup2 = document.getElementById("popup2");
+        let title = document.getElementById("title");
+        let description = document.getElementById("description");
+        let address = document.getElementById("address");
+        let rent = document.getElementById("rent");
+        function openPopup(){
+            if(title.value === "" || description.value === "" || address.value === "" || rent.value === ""){
+                popup2.classList.add("open-popup2");
+            } else{
+                popup.classList.add("open-popup");
+            }
+            
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+            popup2.classList.remove("open-popup2");
+
+        }
+        
+    </script>
+</body>
+</html>
